@@ -10,9 +10,10 @@ import React from 'react'
 }
 }
 
-const page = () => {
+const page = async () => {
+  const data = await fetchData()
   return (
-    <div>About me</div>
+    <div>About me {data.name}</div>
   )
 }
 
